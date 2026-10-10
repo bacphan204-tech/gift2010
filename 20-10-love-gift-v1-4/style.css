@@ -89,3 +89,71 @@
 /* Put the opened gift in front of the flying hearts so the text stays readable. */
 .game-reward-modal{z-index:110}
 @media(min-width:761px) and (max-width:1080px){.desktop-nav{gap:18px}.site-header{gap:15px}.desktop-nav a{font-size:12px}}
+
+/* ============================================================
+   V1.5 — MOBILE LOVE NOTE SPACING FIX
+   Decorative sparkle stays outside the writing; mobile type
+   keeps its own readable layer. Other sections remain intact.
+   ============================================================ */
+@media (max-width: 760px) {
+  .love-note-section {
+    padding: 62px 24px 78px;
+    max-width: 600px;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .love-note-section .handwriting {
+    position: relative;
+    z-index: 2;
+    font-size: clamp(27px, 7vw, 31px);
+    line-height: 1.3;
+    margin: 0 0 23px;
+  }
+
+  .love-note-section h2 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: clamp(18px, 5vw, 21px);
+    line-height: 1.72;
+    letter-spacing: -0.012em;
+    overflow-wrap: break-word;
+  }
+
+  .note-deco {
+    top: 13px;
+    left: 12px;
+    right: auto;
+    z-index: 0;
+    font-size: 25px;
+    opacity: 0.26;
+    pointer-events: none;
+  }
+
+  .note-underline {
+    position: relative;
+    z-index: 2;
+    width: 76px;
+    margin: 27px auto 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .love-note-section {
+    padding: 57px 21px 72px;
+  }
+
+  .love-note-section h2 {
+    font-size: 18px;
+    line-height: 1.73;
+  }
+
+  .note-deco {
+    top: 11px;
+    left: 10px;
+    font-size: 21px;
+  }
+}
