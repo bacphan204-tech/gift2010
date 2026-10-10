@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff6f3" />
+  <meta name="description" content="Một món quà bé xíu, dành cho một người thật đặc biệt. Happy 20/10 ♡" />
+  <meta property="og:title" content="A little gift, just for you ♡" />
+  <meta property="og:description" content="Có một món quà 20/10 đang đợi cậu mở đó..." />
+  <meta property="og:image" content="images/hero-second.webp" />
+  <title>Gửi cậu, người tớ thương ♡ | 20/10</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <!-- FIRST: playful love question -->
+  <section id="welcome" class="welcome" aria-label="Mở món quà 20 tháng 10">
+    <div class="welcome-glow glow-a" aria-hidden="true"></div>
+    <div class="welcome-glow glow-b" aria-hidden="true"></div>
+    <span class="welcome-deco deco-a" aria-hidden="true">✧</span>
+    <span class="welcome-deco deco-b" aria-hidden="true">♡</span>
+    <span class="welcome-deco deco-c" aria-hidden="true">✿</span>
+    <div class="welcome-layout">
+      <div class="welcome-copy">
+        <div class="tiny-label"><span class="tiny-line"></span> A LITTLE SURPRISE FOR YOU <span class="tiny-line"></span></div>
+        <p class="handwriting greeting-script">dear my favorite person,</p>
+        <h1>Có một món quà <em>nhỏ xíu</em> dành cho cậu.</h1>
+        <p class="welcome-desc">Nhân ngày 20/10, tớ muốn dành cho cậu một điều thật đặc biệt. Nhưng mà... trước khi mở quà, trả lời tớ một câu thôi nhé!</p>
+        <div class="question-card">
+          <div class="question-heading"><span>💌</span><span>một câu hỏi rất quan trọng...</span></div>
+          <h2>Cậu có yêu tớ không? <span class="question-heart">♡</span></h2>
+          <button id="yes-button" class="button button-primary yes-button" type="button">Cóooo, tớ yêu cậu nhiều lắm! <span>♥</span></button>
+          <div id="no-zone" class="no-zone"><button id="no-button" class="button button-no" type="button">Không nha 😒</button></div>
+          <div id="no-message" class="no-message" aria-live="polite"><span class="eyes">👀</span><span>Cậu đang định bấm cái gì đấy?!</span></div>
+          <p class="question-footnote">Pssst... chỉ có một đáp án đúng thôi đó =))</p>
+        </div>
+      </div>
+      <div class="welcome-visual" aria-label="Ảnh kỷ niệm của hai đứa">
+        <div class="photo-shadow photo-shadow-one"></div>
+        <div class="photo-shadow photo-shadow-two"></div>
+        <figure class="welcome-polaroid">
+          <div class="tape tape-top"></div>
+          <img src="images/cover.webp" alt="Một khoảnh khắc thật ngọt ngào của hai đứa" fetchpriority="high" />
+          <figcaption class="handwriting">you make my heart smile ♡</figcaption>
+        </figure>
+        <span class="visual-star star-left" aria-hidden="true">✧</span>
+        <span class="visual-star star-right" aria-hidden="true">✴</span>
+        <div class="visual-seal" aria-hidden="true"><span>made<br>with ♡</span></div>
+      </div>
+    </div>
+    <div class="welcome-bottom" aria-hidden="true"><span>20</span><span class="welcome-bottom-flower">✿</span><span>10</span></div>
+  </section>
+
+  <!-- SECOND: the actual gift -->
+  <div id="gift-site" class="gift-site is-hidden">
+    <header class="site-header">
+      <a href="#home" class="brand" aria-label="Về trang đầu">a little <span>love</span> ♡</a>
+      <nav class="desktop-nav" aria-label="Đi đến các phần trong món quà">
+        <a href="#home">Home</a><a href="#memories">Our moments</a><a href="#letter">Love letter</a><a href="#little-game">Mini game 🎁</a>
+      </nav>
+      <button class="header-present" id="header-surprise" type="button">One more thing <span>↗</span></button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-background"></div>
+        <span class="hero-floating-icon floating-one" aria-hidden="true">✧</span>
+        <span class="hero-floating-icon floating-two" aria-hidden="true">♡</span>
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> OCTOBER 20 · JUST FOR YOU</div>
+          <p class="hero-script handwriting">for the girl i adore</p>
+          <h2>Happy <span>Women's Day,</span><br />my <i>love.</i></h2>
+          <p class="hero-desc">Giữa rất nhiều điều xinh đẹp trên thế giới này, tớ vẫn thấy cậu là điều đặc biệt nhất. Hôm nay, hãy để tớ yêu chiều cậu một chút nhé.</p>
+          <a href="#memories" class="button button-primary discover-button">Mình xem kỷ niệm nhé <span>↗</span></a>
+          <p class="hero-subtitle">a little corner of our universe <span>♡</span></p>
+        </div>
+        <div class="hero-collage reveal">
+          <div class="hero-doodle" aria-hidden="true">♡ ♡ ♡</div>
+          <div class="hero-photo hero-photo-back"><img src="images/hero-second.webp" alt="Khung ảnh kỷ niệm dễ thương" /></div>
+          <div class="hero-photo hero-photo-main"><img src="images/hero.webp" alt="Hai đứa bên nhau" /><span class="hero-photo-caption handwriting">my safe place ♡</span></div>
+          <div class="hero-sunburst" aria-hidden="true">✺</div>
+        </div>
+        <div class="scroll-note"><span>scroll to explore</span><span>↓</span></div>
+      </section>
+
+      <section class="love-note-section reveal" aria-label="Một lời nhắn nho nhỏ">
+        <span class="note-deco" aria-hidden="true">✦</span>
+        <p class="handwriting">little things, big feelings</p>
+        <h2>Không cần ngày đặc biệt để thương cậu,<br /><em>nhưng hôm nay là lý do tuyệt vời để nói ra.</em></h2>
+        <span class="note-underline" aria-hidden="true"></span>
+      </section>
+
+      <section class="memories-section" id="memories">
+        <div class="section-heading reveal">
+          <span class="eyebrow">CHAPTER 01 · US, IN LITTLE FRAMES</span>
+          <h2>Our <i>moments</i><span class="heading-sparkle">✧</span></h2>
+          <p>Mỗi bức ảnh đều là một điều nho nhỏ khiến tớ mỉm cười khi nhớ về.</p>
+        </div>
+        <div class="photo-wall" id="photo-wall" aria-label="Album kỷ niệm, chạm vào ảnh để xem lớn"></div>
+        <div class="memories-footer reveal"><span>✧</span><p>Và tớ vẫn muốn có thật nhiều tấm ảnh cùng cậu nữa.</p><span>✧</span></div>
+      </section>
+
+      <section class="quote-break reveal" aria-label="Một câu nhắn">
+        <div class="quote-photo"></div><div class="quote-overlay"></div>
+        <div class="quote-content"><span>♡</span><p>if i had to choose again,<br />it would <i>still be you.</i></p><span>♡</span></div>
+      </section>
+
+      <section class="letter-section" id="letter">
+        <div class="section-heading reveal">
+          <span class="eyebrow">CHAPTER 02 · WORDS FROM MY HEART</span>
+          <h2>A letter <i>to you</i> <span class="heading-sparkle">♡</span></h2>
+          <p>Có vài điều tớ muốn nói, nhưng đôi khi lại ngại nói thành lời...</p>
+        </div>
+        <div class="letter-stage reveal">
+          <div class="letter-flowers flower-left" aria-hidden="true">✿<small>✼</small></div>
+          <div class="letter-flowers flower-right" aria-hidden="true">✿<small>✻</small></div>
+          <button id="envelope" class="envelope" type="button" aria-expanded="false" aria-controls="letter-paper">
+            <span class="envelope-top"></span><span class="envelope-base"></span><span class="envelope-left"></span><span class="envelope-right"></span><span class="wax-seal">♥</span>
+          </button>
+          <p id="letter-prompt" class="handwriting envelope-prompt">chạm vào lá thư để mở nhé ♡</p>
+          <article id="letter-paper" class="letter-paper" aria-hidden="true">
+            <div class="letter-date">OCTOBER 20 · WITH LOVE</div>
+            <h3 class="handwriting" id="letter-dear">Gửi cậu, người tớ thương ♡</h3>
+            <div class="letter-body" id="letter-body"></div>
+            <p class="letter-signature handwriting" id="letter-signature">— từ tớ, người luôn thương cậu ♡</p>
+            <button class="letter-close" id="letter-close" type="button">Gấp thư lại <span>⌃</span></button>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- CHAPTER 03 — A LITTLE MEMORY GAME -->
+      <section class="memory-game-section" id="little-game" aria-labelledby="memory-game-heading">
+        <div class="section-heading reveal">
+          <span class="eyebrow" id="memory-game-eyebrow">CHAPTER 03 · A LITTLE LOVE QUIZ</span>
+          <h2 id="memory-game-heading">Một câu hỏi <i>bé xíu</i></h2>
+          <p id="memory-game-intro">Cậu có nhớ kỷ niệm nhỏ đầu tiên của chúng mình không?</p>
+        </div>
+        <div class="memory-game-stage reveal">
+          <span class="game-doodle game-doodle-left" aria-hidden="true">✧</span>
+          <span class="game-doodle game-doodle-right" aria-hidden="true">♡</span>
+          <div class="memory-game-card" id="memory-game-card">
+            <span class="game-card-seal" aria-hidden="true">💌</span>
+            <p class="game-kicker handwriting">do you remember, my love?</p>
+            <h3 id="memory-game-question">Món đầu tiên chúng mình ăn cùng nhau là gì?</h3>
+            <form id="memory-game-form" class="memory-game-form" autocomplete="off" novalidate>
+              <label for="memory-game-answer">Đáp án của cậu ♡</label>
+              <input id="memory-game-answer" name="answer" type="text" placeholder="Gõ tên món ăn ở đây..." autocapitalize="sentences" enterkeyhint="done" maxlength="80" aria-describedby="memory-game-feedback" required />
+              <button class="button button-primary" type="submit">Trả lời nè <span aria-hidden="true">↗</span></button>
+            </form>
+            <p class="memory-game-feedback" id="memory-game-feedback" role="status" aria-live="polite"></p>
+            <div class="memory-game-reveal" id="memory-game-reveal" hidden>
+              <p class="game-unlocked handwriting">you unlocked a little surprise ♡</p>
+              <p id="memory-game-hint">Một chiếc hộp nhỏ dành riêng cho cậu ♡</p>
+              <button class="gift-box-button" id="memory-gift-button" type="button" aria-label="Mở hộp quà bí mật">
+                <span class="gift-box-spark spark-one" aria-hidden="true">✧</span>
+                <span class="gift-box-spark spark-two" aria-hidden="true">✦</span>
+                <span class="gift-box-wrap" aria-hidden="true">
+                  <span class="gift-box-lid"></span>
+                  <span class="gift-box-body"></span>
+                  <span class="gift-box-ribbon-vertical"></span>
+                  <span class="gift-box-ribbon-horizontal"></span>
+                  <span class="gift-box-bow bow-left"></span>
+                  <span class="gift-box-bow bow-right"></span>
+                  <span class="gift-box-knot"></span>
+                </span>
+                <span class="gift-box-caption">chạm để mở quà 🎀</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ending-section" id="surprise">
+        <div class="ending-decoration ending-deco-one" aria-hidden="true">✿</div>
+        <div class="ending-decoration ending-deco-two" aria-hidden="true">✧</div>
+        <div class="ending-photo-frame reveal"><img src="images/ending.webp" alt="Khoảnh khắc đặc biệt của hai đứa" loading="lazy" /><span class="handwriting">always us ♡</span></div>
+        <div class="ending-content reveal">
+          <span class="eyebrow">CHAPTER 04 · MY FAVORITE PERSON</span>
+          <p class="handwriting ending-script">and one last little thing...</p>
+          <h2>Cảm ơn cậu đã<br />đến bên <i>tớ.</i></h2>
+          <p>Chúc cô gái của tớ một ngày 20/10 thật dịu dàng, thật hạnh phúc. Mong rằng mỗi ngày của cậu đều có thật nhiều lý do để mỉm cười.</p>
+          <button id="ending-button" class="button button-primary" type="button">Bấm vào đây, còn bất ngờ nữa 💗</button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>made with all my heart ♡</span><a href="#home">back to the top ↑</a><span>20 / 10 / 2026</span></footer>
+  </div>
+
+  <!-- MUSIC PLAYER; activated only by a user click for browser autoplay policies -->
+  <aside class="music-widget is-hidden" id="music-widget" aria-label="Trình phát nhạc tình yêu">
+    <div class="music-expanded" id="music-expanded" hidden>
+      <div class="music-expanded-header"><strong>our love playlist</strong><span>🔀 shuffle · 4 songs</span></div>
+      <div id="playlist" class="playlist"></div>
+      <p class="music-help" id="music-help"></p>
+    </div>
+    <div class="music-compact">
+      <button id="music-list-toggle" class="music-art" type="button" title="Mở danh sách nhạc" aria-label="Mở danh sách nhạc" aria-expanded="false"><span>♫</span></button>
+      <div class="music-track"><strong id="music-title">I Love You 3000</strong><span id="music-artist">Stephanie Poetri</span></div>
+      <button id="music-prev" class="music-icon" type="button" aria-label="Bài trước">⏮</button>
+      <button id="music-play" class="music-icon main-play" type="button" aria-label="Phát nhạc">▶</button>
+      <button id="music-next" class="music-icon" type="button" aria-label="Bài sau">⏭</button>
+      <button id="music-mute" class="music-icon volume-button" type="button" aria-label="Tắt âm thanh">♫</button>
+    </div>
+    <audio id="background-audio" preload="none"></audio>
+  </aside>
+
+  <!-- Photo lightbox -->
+  <div class="modal-backdrop" id="photo-modal" role="dialog" aria-modal="true" aria-label="Xem ảnh kỷ niệm" hidden>
+    <button class="modal-x" id="photo-close" type="button" aria-label="Đóng ảnh">×</button>
+    <button class="photo-arrow photo-arrow-prev" id="photo-prev" type="button" aria-label="Ảnh trước">‹</button>
+    <figure class="photo-modal-content"><img id="photo-full" src="images/moment-01.webp" alt="Ảnh kỷ niệm" /><figcaption id="photo-caption" class="handwriting"></figcaption></figure>
+    <button class="photo-arrow photo-arrow-next" id="photo-next" type="button" aria-label="Ảnh sau">›</button>
+    <div class="photo-counter" id="photo-counter"></div>
+  </div>
+
+  <!-- Mini-game reward; content is editable in config.js -->
+  <div class="modal-backdrop game-reward-modal" id="memory-gift-modal" role="dialog" aria-modal="true" aria-labelledby="memory-gift-title" hidden>
+    <div class="game-reward-dialog">
+      <button id="memory-gift-close" class="game-reward-close" type="button" aria-label="Đóng hộp quà">×</button>
+      <div class="game-reward-icon" aria-hidden="true">🎁</div>
+      <p class="handwriting">this one's for you ♡</p>
+      <h2 id="memory-gift-title">Một bất ngờ dành cho cậu ♡</h2>
+      <img id="memory-gift-image" class="game-reward-image" alt="Hình ảnh món quà" hidden />
+      <p id="memory-gift-message">Quà thật tớ đang chuẩn bị riêng cho cậu. Chờ tớ bật mí nhé!</p>
+      <button id="memory-gift-done" class="button button-primary" type="button">Hehe, yêu cậu ♡</button>
+    </div>
+  </div>
+
+  <!-- Final reveal -->
+  <div class="modal-backdrop surprise-modal" id="surprise-modal" role="dialog" aria-modal="true" aria-label="Lời nhắn cuối cùng" hidden>
+    <div class="surprise-dialog"><button id="surprise-close" class="surprise-x" type="button" aria-label="Đóng">×</button><span class="surprise-icon">💗</span><p class="handwriting">psst... one more thing</p><h2 id="surprise-title">Yêu cậu nhiều lắm!</h2><p id="surprise-message">Happy 20/10, my favorite person ♡</p><button id="surprise-again" class="button button-primary" type="button">Ôm một cái nàaa ♡</button></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
